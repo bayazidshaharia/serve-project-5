@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAYAZID SHAHARIA protfolio</title>
+    <link rel="icon" href="image8/logo-symbol-dark.png" type="icon" sizes="16*16">
+    <link rel="stylesheet" href="css1/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/all.min.css">
+    <link rel="stylesheet" href="css1/stayle1.css">
+    <link rel="stylesheet" href="js/program.js">
+    
+</head>
+<body>
+<script>
+    console.log('home work -01')
+    function laptopMobileWatch(x,y,z) {
+    var laptop = x;
+    console.log(`laptop =${x}`);
+    var mobile = y;
+    console.log(`mobile =${y}`);
+    var watch = z;
+    console.log(`watch =${z}`);
+    var total = (`total = ${laptop + mobile +watch}`);
+    return total;
+    }
+    var output1 = laptopMobileWatch(60000,25000,5000);
+    console.log(output1);
+
+
+    // ====================================================================
+
+console.log('home work -02')
+var day =23;
+console.log(`day spend = ${day}`)
+if(day>0 && day <=10){
+    function laptopMobileWatch(day){
+        var total = day*(100);
+        return total;
+    }
+    var output = laptopMobileWatch(day);
+    console.log(output);
+}
+else if(day>11 && day <=20){
+    function laptopMobileWatch(day){
+        var total = day*((100 / 100)*80);
+        return total;
+    }
+    var output = laptopMobileWatch(day);
+    console.log(output);
+}
+else if(day>21){
+    function laptopMobileWatch(day){
+        var total = day*((100 / 100)*50);
+        return total;
+    }
+    var output = laptopMobileWatch(day);
+    console.log(output);
+}
+
+// ========================================================03
+
+
+console.log('home work -03')
+function longestString(arr){
+    let longest ="";
+    arr.map(function (str) {
+        if(str.length > longest.length){
+            longest =str;
+        }
+    })
+    return longest;
+    console.log(longest.length)
+    
+}
+const longestStringOneLine = arr => arr.reduce((base,element) => element.length >base.length ? element:base);
+console.log(longestString(["mim","sadiannnn","bayazid","shahariabayazid","afrin","korim","arif"]));
+
+
+</script>
+
+<link rel="stylesheet" href="js/jquery-3.6.0.min.js">
+<link rel="stylesheet" href="js/popper.min.js">
+<link rel="stylesheet" href="js/bootstrap.min.js">
+<link rel="stylesheet" href="js/main.js">
+</body>
+</html>
